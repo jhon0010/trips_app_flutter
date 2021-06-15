@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trips_app_flutter/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
@@ -93,9 +94,11 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start, // by default the column is arrange (center)
       children: [
         tittleStarts,
-        description
+        description,
+        ButtonPurple('Navigate')
       ],
     );
   }
