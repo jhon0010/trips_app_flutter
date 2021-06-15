@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:trips_app_flutter/header_app_bar.dart';
 import 'package:trips_app_flutter/review_list.dart';
 import 'description_place.dart';
 import 'gradient_back.dart';
@@ -24,6 +26,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIOverlays([]); // remove the android status bar color
     return MaterialApp(
       title: 'Flutter Demo', // title of the task manager
       theme: ThemeData(
@@ -38,7 +41,7 @@ class MyApp extends StatelessWidget {
                   ReviewList()
                 ],
               ),
-              GradientBack()
+              HeaderAppBar()
             ],
           ),
       )

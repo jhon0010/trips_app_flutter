@@ -14,7 +14,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final start_boder = Container(
       margin: EdgeInsets.only(
-          top: 323.0,
+          top: 380.0,
           right: 3.0
       ),
       child: Icon(
@@ -25,7 +25,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final start_half = Container(
       margin: EdgeInsets.only(
-          top: 323.0,
+          top: 380.0,
           right: 3.0
       ),
       child: Icon(
@@ -36,7 +36,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final start = Container(
       margin: EdgeInsets.only(
-        top: 323.0,
+        top: 380.0,
         right: 3.0
       ),
       child: Icon(
@@ -66,7 +66,7 @@ class DescriptionPlace extends StatelessWidget {
       children: [
         Container(
           margin: EdgeInsets.only(
-            top: 320.0,
+            top: 380.0,
             left: 20.0,
               right: 20.0
           ),
