@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() {
   runApp(MyApp());
@@ -6,10 +7,17 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+
+  final String descriptionDummy = 'Lorem ipsum dolor sit amet consectetur adipiscing '
+      'elit congue consequat orci fusce pretium sem, duis ultricies neque vel '
+      'pellentesque magnis tincidunt viverra volutpat urna luctus justo. Iaculis '
+      'per ligula suspendisse lacus commodo gravida ultrices vestibulum odio nunc velit, '
+      'condimentum vel volutpat nam ante quis eros hendrerit enim dis.';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Demo', // title of the task manager
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -22,7 +30,10 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+          appBar: AppBar(title: Text('Hola Mundo!'),),
+          body: new DescriptionPlace('Bahamas',4, descriptionDummy)
+      )
     );
   }
 }
