@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trips_app_flutter/floating_action_button_green.dart';
 
 class CardImage extends StatelessWidget {
 
@@ -33,7 +34,13 @@ class CardImage extends StatelessWidget {
       ),
     );
 
-    return card;
+    return Stack(
+      alignment: Alignment(0.9,1.1), // alignment the floating button and the card
+      children: [
+        card,
+        FloatingActionButtonGreen()
+      ],
+    );
   }
 
 }
