@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trips_app_flutter/widgets/floating_action_button_green.dart';
+import 'package:trips_app_flutter/shared/widgets/floating_action_button_green.dart';
 
 class CardImage extends StatelessWidget {
 
