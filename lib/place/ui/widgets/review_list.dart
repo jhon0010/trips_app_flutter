@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trips_app_flutter/review.dart';
+import 'package:trips_app_flutter/place/ui/widgets/review.dart';
 
 class ReviewList extends StatelessWidget {
 

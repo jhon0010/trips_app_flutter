@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:trips_app_flutter/home_trips.dart';
-import 'package:trips_app_flutter/profile.dart';
-import 'package:trips_app_flutter/search_trips.dart';
+import 'package:trips_app_flutter/place/ui/screen/home_trips.dart';
+import 'package:trips_app_flutter/place/ui/screen/search_trips.dart';
+import 'package:trips_app_flutter/user/ui/screen/profile_trips.dart';
 
 class NavigationBarTripsCupertino extends StatelessWidget {
   @override
@@ -30,7 +30,7 @@ class NavigationBarTripsCupertino extends StatelessWidget {
               break;
             case 2:
               return CupertinoTabView(
-                builder: (BuildContext context) => Profile(),
+                builder: (BuildContext context) => ProfileTrips(),
               );
             default : return CupertinoTabView(
               builder: (BuildContext context) => HomeTrips(),

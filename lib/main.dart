@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:trips_app_flutter/navigation_bar_trips.dart';
 import 'package:trips_app_flutter/navigation_bar_trips_cupertino.dart';
 
 void main() {

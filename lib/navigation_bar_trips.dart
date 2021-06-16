@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:trips_app_flutter/home_trips.dart';
-import 'package:trips_app_flutter/profile.dart';
-import 'package:trips_app_flutter/search_trips.dart';
+import 'package:trips_app_flutter/place/ui/screen/home_trips.dart';
+import 'package:trips_app_flutter/place/ui/screen/search_trips.dart';
+import 'package:trips_app_flutter/user/ui/screen/profile_trips.dart';
 
 class NavigationBarTrips extends StatefulWidget {
   @override
@@ -17,7 +17,7 @@ class _NavigationBarTrips extends State {
   final List<Widget> widgetsChildren = [
     HomeTrips(),
     SearchTrips(),
-    Profile()
+    ProfileTrips()
   ];
 
   void onTapTapped(int tapIndex){ // start from 0
